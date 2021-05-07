@@ -1,0 +1,6 @@
+def defang_address(g):
+    m=g.split(".")
+    new_address="[.]".join(m)
+    return new_address
+IP_address=defang_address("5.4.3.2")
+print(IP_address)
