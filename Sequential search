@@ -1,0 +1,7 @@
+def Search(elements,keys):
+    for i in elements:
+        if i==keys:
+            return True
+    return False
+elements=[5,4,6,5,3,4]
+print(Search(elements,5))
