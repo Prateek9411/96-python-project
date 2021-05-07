@@ -1,0 +1,11 @@
+def occurence(m):
+    new_string=""
+    for i in m:
+        if i!=" ":
+            if i not in new_string:
+                new_string += i
+                print(f"{i} = {m.count(i)} ",end="\n")
+            else:
+                pass
+Your_string="abbbddijfj dkfjf kjfjf "
+occurence(Your_string.strip(" "))
