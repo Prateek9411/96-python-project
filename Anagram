@@ -1,0 +1,8 @@
+# anagram
+def anagram(first_word,Second_word):
+    for i in first_word:
+        if first_word.count(i)!=Second_word.count(i):
+            return False
+    return True
+result=anagram("despair","praised")
+print(result)
