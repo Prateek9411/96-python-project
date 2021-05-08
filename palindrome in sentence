@@ -1,0 +1,16 @@
+def palindrome(n):
+    if n==n[::-1]:
+        return True
+    return False
+a=input("Enter your sentence :").strip(" ").lower()
+for i in (",.'?/><}{{}}'"):
+        a = a.replace(i, "")
+list=a.split(" ")
+b=[]
+for word in list:
+    if palindrome(word)==True:
+        if word not in b:
+            b.append(word)
+            print(f"{word}",end=" ")
+    else:
+        pass
