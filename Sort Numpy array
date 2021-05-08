@@ -1,0 +1,16 @@
+# using user defined function
+import numpy as np
+a=np.array([5,4,3,5,4,5])
+print(np.sort(a))
+
+# without using user defined function
+def func(f):
+    for i in range(0,len(f)):
+        for j in range(0,len(f)):
+            if(f[i]<f[j]):
+                f[i],f[j]=f[j],f[i]
+    return f
+import numpy as np
+b=np.array([6,5,4,3,5,6,4])
+sorted_array=func(b)
+print(sorted_array)
