@@ -1,0 +1,24 @@
+# stack using python
+class stack:
+    def __init__(self):
+        self.a=[]
+    def input(self,s):
+         self.a.append(s)
+    def pop(self):
+        if(len(self.a)>0):
+            self.a.pop()
+        else:
+            print( "Empty array")
+    def display(self):
+        print(self.a)
+a=stack()
+while True:
+    b=input("Enter your condition").split(",")
+    if b[0].lower()=="push":
+        a.input(int(b[1]))
+    elif b[0].lower()=="pop":
+        a.pop()
+    elif b[0].lower()=="display":
+        a.display()
+    elif b[0].lower()=="exit":
+        break
