@@ -6,7 +6,7 @@ class stack:
          self.a.append(s)
     def pop(self):
         if(len(self.a)>0):
-            self.a.pop()
+            self.a.pop(0)
         else:
             print( "Empty array")
     def display(self):
