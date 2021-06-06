@@ -1,0 +1,23 @@
+import random
+while(True):
+  n=random.choice(['rock','paper','scissor'])
+  a=input("Choose your case:").lower()
+  if a==n:
+    print("Game tied")
+  elif a=='rock':
+    if n=='paper':
+      print("You lose it's paper")
+    elif n=='scissor':
+      print("You win")
+  elif a=='paper':
+    if n=='scissor':
+      print("You lose it's scissor")
+    elif n=='rock':
+      print("You win")
+  elif a=='scissor':
+    if n=='rock':
+      print("You lose it's rock")
+    elif n=='paper':
+      print("You win")
+  else:
+    break
