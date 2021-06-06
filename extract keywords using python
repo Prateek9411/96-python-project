@@ -1,0 +1,7 @@
+pip install rake-nltk
+from rake_nltk import Rake 
+rake_nltk_var=Rake()
+text="""My name ,is prateek ,krsihali ,and i love it ,bum"""
+rake_nltk_var.extract_keywords_from_text(text)
+keywords=rake_nltk_var.get_ranked_phrases()
+print(keywords)
