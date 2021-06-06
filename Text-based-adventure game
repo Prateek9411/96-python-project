@@ -1,0 +1,10 @@
+# text based adventure game
+n=input("Enter Your name")
+print("You come home one night and there is thief in your house\nAnd he saw you\nNow what will you do ")
+n=int(input("Choose 1.Run or 2.call the police\n"))
+if(n==1):
+  print("You did it")
+else:
+  print("You die")
+
+    
