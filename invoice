@@ -1,0 +1,22 @@
+# invoice
+product1,product_price1="shampoo",34
+product2,product_price2="facewash",54
+product3,product_price3="deo",67
+
+company_name="Eraons"
+company_located="Dehradun"
+company_type="IT firm"
+print('*'*100)
+print("\t\t\t{}".format(company_name.title()))
+print("\t\t\t{}".format(company_located.title()))
+print("\t\t\t{}".format(company_type.title()))
+print("="*100)
+print("\t\t\tProduct name\tPrdouct price")
+print("\t\t\t{}\t\t${}".format(product1.title(),product_price1))
+print("\t\t\t{}\t${}".format(product2.title(),product_price2))
+print("\t\t\t{}\t\t${}".format(product3.title(),product_price2))
+print("="*100)
+print("\t\t\tTotal")
+total=product_price1+product_price2+product_price3
+print("\t\t\t${}".format(total))
+print("*"*100)
