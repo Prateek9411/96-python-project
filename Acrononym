@@ -1,0 +1,6 @@
+# acrononym
+i=input("Enter your queue :").split()
+c=""
+for a in i:
+  c+=str(a[0]).upper()
+print(c)
