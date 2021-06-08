@@ -1,0 +1,20 @@
+from datetime import datetime
+from playsound import playsound
+set_alarm=input("SET ALARM(HR:MM:SSPM\AM) =")
+alarm_hour=set_alarm[0:2]
+alarm_minute=set_alarm[3:5]
+alarm_seconds=set_alarm[6:8]
+alarm_period=set_alarm[8:10].upper()
+while True:
+  time=datetime.now()
+  current_hour=time.strftime("%H")
+  current_minute=time.strftime("%M")
+  current_seconds=time.strftime("%S")
+  current_period=time.strftime("%p")
+  if current_period==alarm_period:
+    if alarm_hour==current_hour:
+      if alarm_minute==current_minute:
+        if alarm_seconds==current_seconds:
+          print("Wake Up")
+          playsound('path/audio.mp3')
+          break
